@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>ENCRIPTADOR</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Logo.svg" alt="Logo">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area"  cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+
+        </textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" id="content" rows="5" cols="30"></textarea>
+            <div>
+                <button class="btn-copiar" id="copy" title="Copy Textarea Content">Copy</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/esteban-sardi-fernandez-200413235/" target="_blank"> &copy Esteban Sardi </a> Todos los derechos reservados
+
+    </footer> 
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
